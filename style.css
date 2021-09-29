@@ -1,0 +1,400 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(153, 75, 65, 0.801);
+  position: relative;
+  margin-top: -102.5%;
+  position: fixed;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  z-index: 5;
+}
+
+.slide {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.stick {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.411);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.411);
+  position: absolute;
+  top: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  z-index: 5;
+  background-color: white;
+}
+
+.stick h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: purple;
+  font-size: 20px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stick .ham {
+  width: 30px;
+  height: 12px;
+  margin-left: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.stick .ham div {
+  width: 100%;
+  height: 2.5px;
+  background-color: purple;
+  border-radius: 30px;
+}
+
+.stick .ham div:nth-child(1) {
+  width: 90%;
+}
+
+.stick .ham div:nth-child(2) {
+  width: 80%;
+}
+
+.one {
+  width: 100%;
+  height: 190vh;
+  background-color: rgba(255, 255, 255, 0.267);
+  position: relative;
+  margin-top: 40px;
+}
+
+.one .latest {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: purple;
+  position: absolute;
+  top: 70px;
+  left: 5%;
+}
+
+.one .row {
+  width: 100%;
+  list-style-type: none;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.233);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.233);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.one .row li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  color: purple;
+  padding-right: 30px;
+}
+
+.one .row li:nth-child(7) {
+  border: none;
+}
+
+.one .unor {
+  width: 95%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1200px;
+  position: absolute;
+  top: 120px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.one .unor li {
+  width: 100%;
+  height: 47%;
+  border-radius: 10px 10px 5px 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+}
+
+.one .unor li h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: purple;
+  text-transform: capitalize;
+}
+
+.one .unor li img {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.three {
+  width: 100%;
+  height: 150vh;
+  position: relative;
+  margin-top: 400px;
+}
+
+.three .uli {
+  width: 95%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  list-style-type: none;
+}
+
+.three .uli li {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.three .uli li .fest {
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.three .uli li .fest li {
+  height: 45%;
+  width: 32%;
+  margin-top: 30px;
+  border-radius: 10px 10px 5px 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+}
+
+.three .uli li .fest li h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: purple;
+  text-transform: capitalize;
+}
+
+.three .uli li .fest li img {
+  width: 100%;
+  height: 70%;
+}
+
+.fourth {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 540;
+  font-size: 14px;
+  width: 15%;
+  padding: 5px;
+  background-color: #b300b3;
+  color: white;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fifth {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  margin-top: 50px;
+}
+
+@media (max-width: 450px) {
+  .fourth {
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .three {
+    height: 70vh;
+    margin-top: 0;
+  }
+  .three .uli {
+    height: 100%;
+    position: absolute;
+    list-style-type: none;
+    overflow-x: scroll;
+  }
+  .three .uli::-webkit-scrollbar {
+    display: none;
+  }
+  .three .uli li {
+    width: 200%;
+    height: 100%;
+    margin-top: 0px;
+  }
+  .three .uli li .fest {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .three .uli li .fest li {
+    height: 46%;
+    width: 32%;
+    margin-top: 0px;
+    border-radius: 10px 10px 5px 5px;
+  }
+  .three .uli li .fest li h2 {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 10px;
+    color: purple;
+    text-transform: capitalize;
+  }
+  .one {
+    height: 90vh;
+  }
+  .one .unor {
+    height: 450px;
+    width: 90%;
+    top: 120px;
+  }
+  .one .unor li {
+    width: 100%;
+    height: 45%;
+  }
+  .one .unor li h2 {
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .one .unor li img {
+    height: 65%;
+  }
+  .one .latest {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    top: 60px;
+  }
+  .one .row {
+    overflow: scroll;
+    padding: 10px;
+  }
+  .one .row::-webkit-scrollbar {
+    display: none;
+  }
+  .one .row li {
+    padding-right: 10px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  .slider {
+    margin-top: -160%;
+  }
+  .stick h1 {
+    font-size: 16px;
+  }
+  .stick .ham {
+    margin-left: 25%;
+    width: 20px;
+    height: 10px;
+    margin-top: 5px;
+  }
+  .stick .ham div {
+    height: 2px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
